@@ -4,7 +4,7 @@ function Cardshome({img,address,info}) {
   return (
     <>
     <div className='max-h-[600px] max-w-[1640] p-4 mx-auto'>
-      <div className='relative  bg-black/50 h-[150px] w-[300px] rounded-lg overflow-hidden '>
+      <div className='relative hover:scale-110 duration-200 bg-black/50 h-[150px] w-[300px] rounded-lg overflow-hidden '>
         <div className='absolute overflow-hidden  h-[100px] w-full  text-white left-2 top-4 '>
           <p className='font-bold'>{info}</p>
           <p className='font-bold'>{address}</p>

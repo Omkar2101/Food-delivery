@@ -79,11 +79,12 @@ function Categories() {
       {/* Display Food section */}
       <div className='grid grid-cols-4 p-6 gap-4'>
         {food.map((item,index)=>{
-          return<div key={index}  >
-                  <div className='p-2 mt-4 w-[280px] shadow-lg bg-gray-400/90 hover:scale-105 duration-300 m-2 rounded-lg ' >
-                        <img className='center rounded-xl object-cover h-[250px] w-[240px] p-2' src={item.image} alt="" />
-                        <div className='flex  p-0.5 justify-between'>
+          return<div key={index} className='hover cursor-pointer'  >
+                  <div className=' mt-4 w-[280px] shadow-lg bg-gray-400/90 hover:scale-105 duration-300 m-2 rounded-lg ' >
+                        <img className=' rounded-xl object-cover h-[200px] w-full ' src={item.image} alt="" />
+                        <div className='flex items-center  p-2 justify-between'>
                         <p className='text-white font-semibold '>{item.name}</p>
+                        <p className='bg-black text-center text-white h-[26px] w-[60px] rounded-lg' >Buy</p>
                         <p  value={item.price} className=' bg-black text-white rounded-lg p-0.5'>{item.price}</p>
                         </div>
                        

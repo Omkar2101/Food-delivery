@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import Cardshome from './components/Cardshome'
 import Headlinecard from './components/Headlinecard'
 import Categories from './components/Categories'
+import Variety from './components/Variety'
+import Footer from './components/Footer'
 
 
 function App({img,info,address}) {
@@ -16,6 +18,8 @@ function App({img,info,address}) {
       <Hero></Hero>
       <Headlinecard></Headlinecard>
       <Categories></Categories>
+      <Variety></Variety>
+      <Footer></Footer>
       
     
     </div>
