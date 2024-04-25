@@ -1,16 +1,17 @@
-// Footer.js
-
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa6';
+import { FaFacebookSquare } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="bg-gradient-to-r from-gray-800 to-gray-600 text-white">
       <div className="container mx-auto px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Follow Us */}
           <div>
-            <h2 className="text-xl font-bold mb-4">Follow Us on 
-            <span></span>
+            <h2 className="text-xl font-bold mb-4 p-2">Follow Us on 
+              <span className='flex gap-0.5 p-1'><FaInstagram /></span>
+              <span className='flex gap-0.5 p-1'><FaFacebookSquare /></span>
             </h2>
             <div className="flex items-center mb-4 space-x-4">
               <a href="#" className="text-white hover:text-gray-300">
@@ -50,7 +51,7 @@ const Footer = () => {
 
         {/* Copyright and Disclaimer */}
         <div className="mt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Your Application. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Best Eats. All rights reserved.</p>
           <p className="mt-2">Privacy Policy | Terms of Service</p>
         </div>
       </div>
